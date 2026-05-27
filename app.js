@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const supabase = 
-    supabaseClient.createClient('https://minhaurl', 
-        'minhaAPIKey')
+    supabaseClient.createClient('https://meepeecxqiukpecwmtwh.supabase.co', 
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lZXBlZWN4cWl1a3BlY3dtdHdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3MDIzMDUsImV4cCI6MjA5NDI3ODMwNX0.5q990d-mJAHMaHPzykneF8VEywf7y5hU6tLBRU6jo_I') // sua anon public key completa aqui
 
 
 app.get('/products', async (req, res) => {
@@ -106,7 +106,7 @@ app.get('/', (req, res) => {
     res.send("Hello I am working my friend Supabase <3");
 });
 
-app.get('*', (req, res) => {
+app.get('*splat', (req, res) => {
     res.send("Hello again I am working my friend to the moon and behind <3");
 });
 
